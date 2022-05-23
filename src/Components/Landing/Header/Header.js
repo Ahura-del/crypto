@@ -1,8 +1,8 @@
-import { Grid } from "@mui/material";
+
 import React, { useEffect, useRef } from "react";
 // import {Link, NavLink} from 'react-router-dom'
 import "./header.scss";
-import bg from "../../../Assets/img/bg-nft-234s.png";
+
 import laptop from "../../../Assets/img/crypto-bg-img-768x586.png";
 import btc1 from '../../../Assets/img/coin-2.png';
 import btc2 from '../../../Assets/img/coin-3.png';
@@ -60,9 +60,9 @@ const Header = () => {
         </nav>
         <div className="header">
           <div className="headerContent">
-            <h1>Buy & sell crypto easily</h1>
+            <h1>Buy & sell <br/>crypto easily</h1>
             <p>
-              Trade Bitcoin, Ethereum, USDT and other altcoins using our crypto
+              Trade Bitcoin, Ethereum, USDT and other altcoins using our<br/> crypto
               trading app.
             </p>
             <button>Get Started</button>
@@ -72,7 +72,7 @@ const Header = () => {
             <img src={ltm} alt="ltm" height={80} width={80} className="ltm"/>
             <img src={eth} alt="eth" height={120} width={120} className="eth"/>
             <img src={btc2} alt="btc" height={70} width={70} className="btc2"/>
-            <img src={laptop} alt="laptop" />
+            <img src={laptop} className="laptop" alt="laptop" />
           </div>
         </div>
       </div>
