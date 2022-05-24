@@ -5,13 +5,20 @@ import stock from "../../../Assets/img/stocks.png";
 import lock from "../../../Assets/img/lock-crypto.png";
 import wallet from "../../../Assets/img/wallet-crypto-icon.png";
 import trade from "../../../Assets/img/earning-trading.png";
+import line from "../../../Assets/img/line-c-step-300x36.png";
+import icon1 from "../../../Assets/img/app03r34.png";
+import icon2 from "../../../Assets/img/mining.png";
+
+import icon3 from "../../../Assets/img/crypto-wallet.png";
+import icon4 from "../../../Assets/img/crypto-trading.png";
 
 import "./main.scss";
 const Main = () => {
   return (
     <main>
+      {/* info */}
       <section className="info">
-        <div className="container">
+        <div className="container info-container">
           <div className="info-img">
             <img src={garph} alt="graph" className="graph" />
             <img src={stock} alt="crypto" className="stock" />
@@ -19,11 +26,11 @@ const Main = () => {
             <img src={monitor} alt="crypto" className="monitor" />
           </div>
           <div className="info-content">
-            <h3>WHAT WE DO</h3>
-            <h2>
+            <h2>WHAT WE DO</h2>
+            <h3>
               Trade crypto on your
               <br /> terms. Anywhere.
-            </h2>
+            </h3>
             <p>
               Invest in Bitcoin, Ethereum, USDT, and other cryptocurrencies
               using our crypto trading app. The Bitcoin and cryptocurrency
@@ -67,6 +74,79 @@ const Main = () => {
                 <p>
                   Download our app and <br />
                   register in 3 minutes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* feuters */}
+      <section className="features">
+        <div className="features-container container">
+          <h2>Features</h2>
+          <h3>How it works?</h3>
+          <p>
+            Cryptocurrency markets have seen an increase in volume in <br />
+            recent weeks, which is a great opportunity for new traders.
+          </p>
+          <div className="features-items">
+            <div className="features-item">
+              <img src={line} alt="" className="connect-line" />
+              <div className="features-item-img">
+                <img src={icon1} alt="" />
+              </div>
+              <div className="features-item-text">
+                <h4>Downlaod app</h4>
+                <p>
+                  Trade Bitcoin, Ethereum,
+                  <br /> USDT and other altcoins <br />
+                  using our crypto trading
+                  <br /> app.
+                </p>
+              </div>
+            </div>
+
+            <div className="features-item">
+              <img src={line} alt="" className="connect-line" />
+              <div className="features-item-img">
+                <img src={icon2} alt="" />
+              </div>
+              <div className="features-item-text">
+                <h4>Register</h4>
+                <p>
+                  Trade Bitcoin, Ethereum,
+                  <br /> USDT and other altcoins <br />
+                  using our crypto trading
+                  <br /> app.
+                </p>
+              </div>
+            </div>
+            <div className="features-item">
+              <img src={line} alt="" className="connect-line" />
+              <div className="features-item-img">
+                <img src={icon3} alt="" />
+              </div>
+              <div className="features-item-text">
+                <h4>Connect wallet</h4>
+                <p>
+                  Trade Bitcoin, Ethereum,
+                  <br /> USDT and other altcoins <br />
+                  using our crypto trading
+                  <br /> app.
+                </p>
+              </div>
+            </div>
+            <div className="features-item">
+              <div className="features-item-img">
+                <img src={icon4} alt="" />
+              </div>
+              <div className="features-item-text">
+                <h4>Start trading</h4>
+                <p>
+                  Trade Bitcoin, Ethereum,
+                  <br /> USDT and other altcoins <br />
+                  using our crypto trading
+                  <br /> app.
                 </p>
               </div>
             </div>
