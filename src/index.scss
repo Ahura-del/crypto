@@ -1,11 +1,14 @@
 
 
+@use "./style/abstracts" as *;
 
 html ,body,* {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
+  animation: startUp 1s ease-in-out;
+  scroll-behavior: smooth;
   // font-size: 62.5%;
 }
 
@@ -21,5 +24,28 @@ img{
   pointer-events: none;
 }
 
+h2{
+  font-size: $headingSize;
+  font-weight: $headingWeight;
+  color: $heading;
+  font-family: $InterFont;
+}
+h3{
+  color: $dark;
+          font-size: $titleSize;
+          padding: 2rem 0;
+          font-weight: $titleWeight;
+          font-family: $RalFont;
+}
 /* font-family: 'DM Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
+
+
+@keyframes startUp {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

@@ -29,20 +29,20 @@ const Header = () => {
           <div className="navList">
             <ul>
               <li>
-                <a className="active">Home</a>
+                <a className="active" href="#">Home</a>
                 {/* <NavLink exact activeClassName="active" to='#' >Home</NavLink> */}
               </li>
               <li>
-                <a>Features</a>
+                <a href="#features">Features</a>
 
                 {/* <NavLink  activeClassName="active" to='#' >Features</NavLink> */}
               </li>
               <li>
-                <a>Learning</a>
+                <a href="#learning">Learning</a>
                 {/* <NavLink  activeClassName="active"  to='#'>Learning</NavLink> */}
               </li>
               <li>
-                <a>Testemonial</a>
+                <a>Download</a>
 
                 {/* <NavLink  activeClassName="active" to='#' >Testemonial</NavLink> */}
               </li>

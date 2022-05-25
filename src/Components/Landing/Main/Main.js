@@ -8,16 +8,17 @@ import trade from "../../../Assets/img/earning-trading.png";
 import line from "../../../Assets/img/line-c-step-300x36.png";
 import icon1 from "../../../Assets/img/app03r34.png";
 import icon2 from "../../../Assets/img/mining.png";
-
 import icon3 from "../../../Assets/img/crypto-wallet.png";
 import icon4 from "../../../Assets/img/crypto-trading.png";
+import bgCoin from "../../../Assets/img/bg-coin.png";
+import playBtn from "../../../Assets/img/play-button.svg";
 
 import "./main.scss";
 const Main = () => {
   return (
     <main>
       {/* info */}
-      <section className="info">
+      <section id="info">
         <div className="container info-container">
           <div className="info-img">
             <img src={garph} alt="graph" className="graph" />
@@ -81,7 +82,7 @@ const Main = () => {
         </div>
       </section>
       {/* feuters */}
-      <section className="features">
+      <section id="features">
         <div className="features-container container">
           <h2>Features</h2>
           <h3>How it works?</h3>
@@ -150,6 +151,38 @@ const Main = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* learning */}
+      <section id="learning">
+        <div className="container learning-container">
+          <div className="learning-text">
+            <div className="learning-heading">
+              <h2>Learning Crypto</h2>
+              <h3>
+                Watch our crypto trading
+                <br />
+                guide for beginners
+              </h3>
+            </div>
+            <div className="learning-content">
+              <p>
+                Watch our crypto trading guide for beginners The Bitcoin and
+                cryptocurrency markets have experienced a surge in volume
+                recently, making it an exciting time to become a trader.
+              </p>
+              <a href="#">
+                View all guides <span>&#8594;</span>
+              </a>
+            </div>
+          </div>
+          <div className="learning-video">
+            <img src={bgCoin} alt="crypto video" className="video-bg" />
+            <span className="play-btn" onClick={() => alert("hi")}>
+              <img src={playBtn} alt="" />
+            </span>
           </div>
         </div>
       </section>
