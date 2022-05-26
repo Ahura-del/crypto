@@ -1,5 +1,6 @@
 import React from "react";
 import monitor from "../../../Assets/img/monitor.png";
+import mobile from "../../../Assets/img/cryptophone.png";
 import garph from "../../../Assets/img/graph-crypto-trading.png";
 import stock from "../../../Assets/img/stocks.png";
 import lock from "../../../Assets/img/lock-crypto.png";
@@ -12,7 +13,15 @@ import icon3 from "../../../Assets/img/crypto-wallet.png";
 import icon4 from "../../../Assets/img/crypto-trading.png";
 import bgCoin from "../../../Assets/img/bg-coin.png";
 import playBtn from "../../../Assets/img/play-button.svg";
-
+import windows from "../../../Assets/img/windows.svg";
+import linux from "../../../Assets/img/linux.svg";
+import apple from "../../../Assets/img/apple.svg";
+import android from "../../../Assets/img/android.svg";
+import eth from "../../../Assets/img/eth.png";
+import btc2 from "../../../Assets/img/coin-3.png";
+import btc1 from "../../../Assets/img/coin-2.png";
+import ltm from "../../../Assets/img/coin-4.png";
+import save from "../../../Assets/img/save.png";
 import "./main.scss";
 const Main = () => {
   return (
@@ -183,6 +192,84 @@ const Main = () => {
             <span className="play-btn" onClick={() => alert("hi")}>
               <img src={playBtn} alt="" />
             </span>
+          </div>
+        </div>
+      </section>
+
+      {/* downlaod */}
+      <section id="download">
+        <div className="container download-container">
+          <div className="downlaod-img">
+            <img src={monitor} alt="desktop app" className="down-monitor" />
+            <img src={mobile} alt="mobile app" className="down-mobile" />
+            <img src={eth} alt="" className="down-eth" />
+            <img src={btc2} alt="" className="down-btc" />
+            <img src={ltm} alt="" className="down-ltm" />
+            <img src={garph} alt="" className="down-graph" />
+          </div>
+          <div className="download-content">
+            <div className="download-heading">
+              <h2>Downlaod app</h2>
+              <h3>
+                Downlaod app for <br /> any platform
+              </h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
+                fuga, soluta voluptas doloribus architecto repellendus ad,
+                accusantium dignissimos sed aliquid exercitationem! Facilis
+                voluptas explicabo, id cum ipsa fuga corrupti blanditiis!
+              </p>
+            </div>
+            <div className="download-btn">
+              <div className="desktop-download">
+                {/* <h2>Download desktop app</h2> */}
+                <span>
+                  <img src={apple} alt="apple" />
+                </span>
+                <span>
+                  <img src={windows} alt="windows" />
+                </span>
+                <span>
+                  <img src={linux} alt="linux" />
+                </span>
+              </div>
+              <div className="mobile-download">
+                {/* <h2>Downlaod mobile app</h2> */}
+                <span>
+                  <img src={android} alt="android" />
+                </span>
+                <span>
+                  <img src={apple} alt="apple phone" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* why us */}
+      <section className="whyus">
+        <div className="container whyus-container">
+          <div className="whyus-content">
+            <h2>Why us</h2>
+            <h3>
+              We got everything you
+              <br /> need to start trading
+            </h3>
+            <p>
+              The Bitcoin and cryptocurrency markets have experienced <br />a
+              surge in volume recently, making it an exciting time to
+              <br /> become a trader.
+            </p>
+            <ul>
+              <li>Top trading platform</li>
+              <li>Secure payments</li>
+              <li>Easy to start trading</li>
+            </ul>
+          </div>
+          <div className="whyus-img">
+            <img src={save} alt="save" className="save" />
+            <img src={eth} alt="" className="save-eth" />
+            <img src={btc1} alt="" className="save-btc" />
           </div>
         </div>
       </section>

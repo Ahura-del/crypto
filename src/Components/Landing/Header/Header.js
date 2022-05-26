@@ -42,7 +42,7 @@ const Header = () => {
                 {/* <NavLink  activeClassName="active"  to='#'>Learning</NavLink> */}
               </li>
               <li>
-                <a>Download</a>
+                <a href="#download">Download</a>
 
                 {/* <NavLink  activeClassName="active" to='#' >Testemonial</NavLink> */}
               </li>

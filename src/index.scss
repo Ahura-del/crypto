@@ -1,8 +1,8 @@
-
-
 @use "./style/abstracts" as *;
 
-html ,body,* {
+html,
+body,
+* {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -10,42 +10,64 @@ html ,body,* {
   animation: startUp 1s ease-in-out;
   scroll-behavior: smooth;
   // font-size: 62.5%;
+&::selection{
+  background: #555555;
+  color: $white;
 }
 
-a{
+  &::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #ebf9ef;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ffadff;
+  }
+}
+
+a {
   text-decoration: none;
   color: inherit;
+  
 }
 
-ul{
+ul {
   list-style: none;
+  li{
+
+    &::selection{
+      color: rgb(100, 100, 100);
+      background: #ffd3ff;
+    }
+  }
 }
-img{
+img {
   pointer-events: none;
 }
 
-h2{
+h2 {
   font-size: $headingSize;
   font-weight: $headingWeight;
   color: $heading;
   font-family: $InterFont;
+  
 }
-h3{
+h3 {
   color: $dark;
-          font-size: $titleSize;
-          padding: 2rem 0;
-          font-weight: $titleWeight;
-          font-family: $RalFont;
+  font-size: $titleSize;
+  padding: 2rem 0;
+  font-weight: $titleWeight;
+  font-family: $RalFont;
+  
 }
-/* font-family: 'DM Sans', sans-serif;
-font-family: 'Raleway', sans-serif; */
-
 
 @keyframes startUp {
-  from{
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
