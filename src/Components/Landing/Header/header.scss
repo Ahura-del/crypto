@@ -16,8 +16,9 @@ header {
       align-self: center;
       width: 65%;
       margin-top: 1rem;
-      // flex-grow: 1;
       display: flex;
+      flex-wrap: wrap;
+      text-align: center;
       justify-content: space-around;
       align-items: center;
       background: rgba(255, 255, 255, 0.72);
@@ -27,7 +28,15 @@ header {
       position: fixed;
       z-index: 3;
       top: 0;
+      .brand{
+        flex-basis: 10%;
+        img{
+          width: 55%;
+        }
+      }
       .navList {
+        flex-basis: 60%;
+
         ul {
           li {
             display: inline-block;
@@ -54,6 +63,8 @@ header {
         }
       }
       .wallet {
+        flex-basis: 20%;
+
         button {
           border: 1px solid $pGray;
           padding: 1.2rem;

@@ -1,0 +1,97 @@
+@use '../../../style/abstracts/' as *;
+
+footer{
+    width: 100%;
+    height: 28vh;
+    background: #EFF4F2;
+
+    .container{
+        width: 75%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+// align-items: center;
+        grid-template-columns: 30% auto auto;
+        column-gap: 4rem;
+        .about-site{
+            img{
+                width: 15%;
+            }
+            p{
+                line-height: 1.7;
+                font-family: $DmFont;
+                font-size: 1.2rem;
+                color: #1b1b1b;
+            }
+        }
+
+        .footer-link{
+            align-self: center;
+            .footer-app{
+                margin-top:1.4rem ;
+            }
+            h4{
+                color: $btn;
+                font-size: 1.3rem;
+                 margin-bottom: 1.2rem;
+            }
+            a{
+                color: #1b1b1b;
+                display: inline-block;
+                margin-right: 1.2rem;
+                cursor: pointer;
+                transition: $transition;
+                &:hover{
+                    transform: scale(1.1);
+                transition: $transition;
+
+                }
+            }
+
+        }
+
+        .footer-sub{
+            align-self: center;
+            h4{
+                &::before{
+                    content: "| ";
+                    color: $heading;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+                
+                font-size: 1.3rem;
+                // margin-bottom: 1.3rem;
+            }
+
+            .footer-input{
+                margin: 1.3rem 0;
+                position: relative;
+                input{
+                    padding: 1.5rem 1.2rem;
+                    border: none;
+                    border-radius: 1.4rem;
+                    font-size: 1.3rem;
+                    outline: none;
+                    &:focus{
+                        outline: none;
+                        border: none;
+                    }
+                }
+
+                button{
+                    right: 3rem;
+                    position: absolute;
+                    border: none;
+                    padding: 1.5rem 2.5rem;
+                    color: $white;
+                    background-color: $heading;
+                    border-radius: 1.4rem;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

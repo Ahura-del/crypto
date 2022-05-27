@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 // import {Link, NavLink} from 'react-router-dom'
 import "./header.scss";
-
+import logo from '../../../Assets/img/cchange.png'
 import laptop from "../../../Assets/img/crypto-bg-img-768x586.png";
 import btc1 from "../../../Assets/img/coin-2.png";
 import btc2 from "../../../Assets/img/coin-3.png";
@@ -25,7 +25,9 @@ const Header = () => {
     <header>
       <div className="container" style={{ paddingBottom: "0.5rem" }}>
         <nav className="navBar">
-          <div className="brand">brand</div>
+          <div className="brand">
+            <img src={logo} alt="logo" />
+          </div>
           <div className="navList">
             <ul>
               <li>
