@@ -9,7 +9,7 @@ body,
   box-sizing: border-box;
   animation: startUp 1s ease-in-out;
   scroll-behavior: smooth;
-  // font-size: 62.5%;
+  font-size: 62.5%;
 &::selection{
   background: #555555;
   color: $white;
@@ -69,5 +69,16 @@ h3 {
   }
   to {
     opacity: 1;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  
+html,
+body,
+*{
+    font-size: 40%;
   }
 }

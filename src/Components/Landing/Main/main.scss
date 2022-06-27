@@ -52,8 +52,8 @@ main {
         //   font-family: $RalFont;
         // }
         p {
-          font-size: 1.5rem;
-          line-height: 1.6;
+          font-size: $pSize;
+          line-height: $pHeight;
           color: $pGray;
           text-align: justify;
         }
@@ -65,7 +65,7 @@ main {
           border-radius: 3rem;
           background: #222;
           color: $white;
-          font-size: $pSize;
+          font-size: $btnSize;
           cursor: pointer;
         }
       }
@@ -95,11 +95,11 @@ main {
             // flex-grow: 2;
             flex-basis: 65%;
             h4 {
-              font-size: 1.2rem;
+              font-size: $h4;
               font-weight: 900;
             }
             p {
-              font-size: 1rem;
+              font-size: 1.4rem;
               font-weight: 500;
               color: $pGray;
               line-height: 1.5;
@@ -170,13 +170,13 @@ main {
           }
           .features-item-text {
             h4 {
-              font-size: $headingSize;
+              font-size: $h4;
               font-weight: $headingWeight;
               padding-bottom: 1rem;
               // color: red;
             }
             p {
-              font-size: 1rem;
+              font-size: 1.4rem;
             }
           }
         }
@@ -206,7 +206,7 @@ main {
           // flex-grow: 2;
           flex-basis: 45%;
           h3 {
-            font-size: 2rem;
+            font-size: $headingSize;
           }
         }
 
@@ -217,13 +217,13 @@ main {
           flex-wrap: wrap;
           align-content: space-around;
           p {
-            font-size: 1rem;
-            line-height: 1.3;
+            font-size: $pSize;
+            line-height: $pHeight;
             color: $pGray;
             text-align: justify;
           }
           a {
-            font-size: 1rem;
+            font-size: 1.5rem;
             // line-height: 1.3;
             color: $btn;
             vertical-align: middle;
@@ -329,14 +329,16 @@ main {
         .download-heading {
           p {
             color: $pGray;
+            font-size: $pSize;
+            line-height: $pHeight;
           }
         }
         .download-btn {
           margin-top: 2rem;
           span {
             display: inline-block;
-            height: 2.5rem;
-            width: 2.5rem;
+            height: 2.8rem;
+            width: 2.8rem;
             margin-right: 1.5rem;
             cursor: pointer;
             transition: $transition;
@@ -373,13 +375,14 @@ main {
           color: $pGray;
           font-weight: 400;
           font-family: $DmFont;
-          font-size: 1.2rem;
+          font-size: $pSize;
           margin: 1.7rem 0;
-          line-height: 1.8;
+          line-height: $pHeight;
         }
 
         ul {
           list-style: none;
+          font-size: 2.8rem;
           li:nth-child(2) {
             margin: 1.5rem 0;
           }
@@ -387,7 +390,7 @@ main {
             &::before{
               content: "+ ";
               color: $heading;
-              font-size: 1.4rem;
+              font-size: 2.8rem;
               font-weight: 500;
               vertical-align: middle;
             }

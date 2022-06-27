@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 // import {Link, NavLink} from 'react-router-dom'
 import "./header.scss";
-import logo from '../../../Assets/img/cchange.png'
+import logo from "../../../Assets/img/cchange.png";
 import laptop from "../../../Assets/img/crypto-bg-img-768x586.png";
 import btc1 from "../../../Assets/img/coin-2.png";
 import btc2 from "../../../Assets/img/coin-3.png";
@@ -31,7 +31,9 @@ const Header = () => {
           <div className="navList">
             <ul>
               <li>
-                <a className="active" href="#">Home</a>
+                <a className="active" href="#">
+                  Home
+                </a>
                 {/* <NavLink exact activeClassName="active" to='#' >Home</NavLink> */}
               </li>
               <li>
@@ -49,6 +51,9 @@ const Header = () => {
                 {/* <NavLink  activeClassName="active" to='#' >Testemonial</NavLink> */}
               </li>
             </ul>
+          </div>
+          <div className="bars">
+            <button></button>
           </div>
           <div className="wallet">
             <button>Connect to wallet</button>
