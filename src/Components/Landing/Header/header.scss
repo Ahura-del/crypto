@@ -91,17 +91,20 @@ header {
       // flex-grow: 4;
       margin-top: 7rem;
       display: flex;
+      flex-wrap: wrap;
       justify-content:center;
       align-items: center;
       .headerContent {
+        flex-basis: 45%;
         h1 {
           color: $dark;
           font-size: $h1;
+          padding-right: 7rem;
         }
         p {
           padding: 1.8rem 0;
           color: $pGray;
-          font-size: $pSize;
+          font-size: $pSizeTitle;
           line-height: $pHeight;
         }
         button {
@@ -115,30 +118,39 @@ header {
         }
       }
       .headerImage {
+        flex-basis: 55%;
         position: relative;
         text-align: right;
         .laptop{
             width: 90%;
         }
         .btc1 {
+          height: 100px;
+          width: 100px;
           position: absolute;
           top: 8rem;
           left: 2rem;
           animation: crypto infinite ease-in-out 1.9s alternate-reverse;
         }
         .ltm {
+          height: 80px;
+          width: 80px;
           position: absolute;
           left: 12rem;
           top: -1rem;
           animation: crypto infinite ease-in-out 2.3s alternate-reverse;
         }
         .eth {
+          height: 120px;
+          width: 120px;
           position: absolute;
           right: 15rem;
           top: 1rem;
           animation: crypto infinite ease-in-out 2.5s alternate-reverse;
         }
         .btc2 {
+          height: 70px;
+          width: 70px;
           position: absolute;
           right: 5rem;
           // top:
@@ -164,12 +176,15 @@ header {
 @media only screen and(max-width:600px){
   header{
     .container{
+      width: 90%;
+      text-align: center;
       nav{
         width: 95%;
         background-color: transparent;
         display: grid;
         grid-template-columns: auto auto auto;
         padding: 1.8rem 2rem;
+        
         .brand{
           text-align: center;
           order: 2;
@@ -202,10 +217,48 @@ header {
       .header{
         margin-top: 1rem;
         flex-wrap: wrap-reverse;
+        text-align: center;
         .headerContent{
           flex-basis: 100%;
           h1{
-            font-size: 5rem;
+            font-size: 6rem;
+            font-weight: bold;
+            padding-right: 0;
+            padding-top: 2rem;
+          }
+          p{
+            font-size: 3rem;
+            margin-top: 2rem;
+          }
+
+          button{
+            margin-top: 4rem;
+            padding: 3rem 6rem;
+            font-size: 3rem;
+            border-radius: 5rem;
+          }
+        }
+
+        .headerImage{
+          flex-basis: 100%;
+          .laptop{
+            width: 100%;
+          }
+          .btc1{
+            height: 60px;
+            width: 60px;
+          }
+          .ltm{
+            height: 50px;
+            width: 50px;
+          }
+          .eth{
+            height: 90px;
+            width: 90px;
+          }
+          .btc2{
+            height: 45px;
+            width: 45px;
           }
         }
       }

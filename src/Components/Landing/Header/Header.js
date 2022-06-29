@@ -62,7 +62,7 @@ const Header = () => {
         <div className="header">
           <div className="headerContent">
             <h1>
-              Buy & sell <br />
+              Buy & sell 
               crypto easily
             </h1>
             <p>
@@ -75,13 +75,11 @@ const Header = () => {
             <img
               src={btc1}
               alt="bitcoin"
-              height={100}
-              width={100}
               className="btc1"
             />
-            <img src={ltm} alt="ltm" height={80} width={80} className="ltm" />
-            <img src={eth} alt="eth" height={120} width={120} className="eth" />
-            <img src={btc2} alt="btc" height={70} width={70} className="btc2" />
+            <img src={ltm} alt="ltm" className="ltm" />
+            <img src={eth} alt="eth" className="eth" />
+            <img src={btc2} alt="btc" className="btc2" />
             <img src={laptop} className="laptop" alt="laptop" />
           </div>
         </div>
