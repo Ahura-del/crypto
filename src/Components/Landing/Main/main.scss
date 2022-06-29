@@ -38,19 +38,7 @@ main {
       }
       .info-content {
         flex: 1 1 50%;
-        // h2 {
-        //   font-size: $headingSize;
-        //   font-weight: $headingWeight;
-        //   color: $heading;
-        //   font-family: $InterFont;
-        // }
-        // h3 {
-        //   color: $dark;
-        //   font-size: $titleSize;
-        //   padding: 2rem 0;
-        //   font-weight: $titleWeight;
-        //   font-family: $RalFont;
-        // }
+  
         p {
           font-size: $pSize;
           line-height: $pHeight;
@@ -452,5 +440,46 @@ main {
   }
   100% {
     transform: scale(0.75);
+  }
+}
+
+
+@media only screen and(max-width:600px){
+  main{
+    .container{
+      width: 90%;
+    }
+
+    #info{
+      text-align: center;
+      .info-container{
+        .info-img{
+          flex-basis: 100%;
+          .stock{
+            right: 10%;
+          }
+          .graph{
+            left: 0;
+            width: 20%;
+          }
+          .monitor{
+            width: 80%;
+          }
+        }
+        .info-content{
+          flex-basis: 100%;
+          p{
+            margin: 2rem 0;
+            font-size: 2.3rem;
+          }
+
+          button{
+            padding: 3rem 6rem;
+            font-size: 3rem;
+            border-radius: 6rem;
+          }
+        }
+      }
+    }
   }
 }
