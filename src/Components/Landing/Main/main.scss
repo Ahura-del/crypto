@@ -448,6 +448,7 @@ main {
   main{
     .container{
       width: 90%;
+      height: 100%;
     }
 
     #info{
@@ -529,5 +530,62 @@ main {
       }
     }
   }
+
+  #features{
+    height: 100%;
+    padding-top: 15rem;
+    text-align: center;
+    .features-container{
+      p{
+        font-size: 2.3rem;
+      }
+      .features-items{
+        .features-item{
+          flex-basis: 100%;
+          margin: 1rem 0;
+          img.connect-line{
+            display: none;
+          }
+          .features-item-text {
+            h4{
+              font-size: 2.5rem;
+            }
+            p{
+              font-size: 1.6rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #learning{
+    height: 100%;
+    padding-top: 15rem;
+    .learning-container{
+      flex-wrap: wrap;
+      width: 90% !important;
+      .learning-text{
+        text-align: center !important;
+        .learning-heading{
+          flex-basis: 100%;
+        }
+        .learning-content {
+          margin: 1.5rem 0;
+          flex-basis: 100%;
+          p{
+            font-size: 2.3rem;
+          }
+          a{
+            display: inline-block;
+            width: 100%;
+            text-align: right;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
 }
 }
